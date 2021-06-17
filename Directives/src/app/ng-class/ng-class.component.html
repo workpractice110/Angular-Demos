@@ -1,0 +1,16 @@
+<h1>Ng Class Implementation</h1>>
+
+
+<span class="glyphicon"
+    [class.glyphicon-star] = "isSelected"
+    [class.glyphicon-star-empty] = "!isSelected"
+    (click) = "onClick()">
+</span>
+<h2>Using ng class</h2>
+<span class="glyphicon"
+    [ngClass] = "{
+        'glyphicon-star':isSelected,
+        'glyphicon-star-empty':!isSelected
+    }"
+    (click) = "onClick()">
+</span>

@@ -1,0 +1,22 @@
+.test {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.heading {
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.body {
+    padding: 20px;
+}
+
+.glyphicon {
+    float: right;
+}
+
+.expanded {
+    background: #f0f0f0;
+}

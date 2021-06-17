@@ -1,0 +1,18 @@
+<h1>Exercise Solution Implementation</h1>
+<div class="test">
+    <div class="heading"
+    [class.expanded] = "isExpanded"
+    (click) = "toggle()" >
+        {{ title }}
+        <span 
+        class = "glyphicon"
+        [ngClass] = "{
+            'glyphicon-chevron-up' : isExpanded,
+            'glyphicon-chevron-down' : !isExpanded
+        }"
+        ></span>
+    </div>
+    <div class="body" *ngIf = "isExpanded">
+        <ng-content></ng-content>
+    </div>
+</div>
