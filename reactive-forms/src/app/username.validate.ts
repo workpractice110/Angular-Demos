@@ -21,4 +21,17 @@ export class UsernameValidator {
             }, 2000);
         });
     }
+
+    static oldPassword(control:AbstractControl) : Promise<ValidationErrors | null> {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if(control.value !== '1234') {
+                    console.log(control);
+                    resolve({oldPassword : true});
+                } else {
+                    resolve(null);
+                }
+            }, 2000);
+        });
+    }
 }

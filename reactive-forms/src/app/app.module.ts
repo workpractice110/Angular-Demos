@@ -7,6 +7,7 @@ import { SignupFormComponent } from './signup-form/signup-form.component';
 import { SubmitValidationComponent } from './submit-validation/submit-validation.component';
 import { NestedFormGroupsComponent } from './nested-form-groups/nested-form-groups.component';
 import { FormArrayComponent } from './form-array/form-array.component';
+import { TestSolutionComponent } from './test-solution/test-solution.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FormArrayComponent } from './form-array/form-array.component';
     SignupFormComponent,
     SubmitValidationComponent,
     NestedFormGroupsComponent,
-    FormArrayComponent
+    FormArrayComponent,
+    TestSolutionComponent
   ],
   imports: [
     BrowserModule,
